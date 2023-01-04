@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/purple_500"
+        android:text="Rocket Details" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_cornerlayout"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name at the top"
+            android:padding="3dp"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Active Status"
+            android:padding="3dp"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cost per launch"
+            android:padding="3dp"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtSuccessRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Success Rate percent"
+            android:padding="3dp"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtDescreption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:padding="3dp"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wikipedia link : "
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wikipedia link"
+                android:padding="3dp"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtHight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Height &amp; Diameter in Feet/Inches"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_img_list"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

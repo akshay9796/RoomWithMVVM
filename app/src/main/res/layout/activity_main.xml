@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context=".ui.rocket.RocketListActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/purple_500"
+        android:text="Rocket Data" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_rct_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Not found any records..." />
+
+</LinearLayout>
